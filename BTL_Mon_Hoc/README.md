@@ -8,7 +8,7 @@ Các bài tập lớn môn học
 -Tìm Kiếm linh kiện  
 -Lắp mạch  
 -Mô phỏng mạch bằng proteus  
-### Đồ án 1: Quản lý phòng khám bằng WPF
+### Đồ án 1: Quản lý bệnh viện/phòng khám bằng WPF
 -Xây dựng cơ sở dữ liệu trên SQL Server  
 -Thực hiện code bằng ngôn ngữ C#
 ### Bài tập lớn: Hệ điều hành_Xây dựng ứng dựng quản lý tiến trình trên Linux (tương tự Task Manager trên Windows)

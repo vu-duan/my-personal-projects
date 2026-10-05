@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_QuanLyKhoaBenh"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1400" Loaded="UserControl_Loaded">
+    <Grid Background="#e6ffff">
+        <DataGrid x:Name="KhoaBenhDataGridQLKB" HorizontalAlignment="Left" Height="304" Margin="26,67,0,0" VerticalAlignment="Top" Width="562" AutoGenerateColumns="False" SelectionChanged="KhoaBenhDataGridQLKB_SelectionChanged" >
+            <DataGrid.Columns>
+                <!--Định nghĩa table: Với tên gọi + độ rộng theo ý muốn-->
+                <DataGridTextColumn Header="MaKhoa" Width="135" Binding="{Binding MaKhoa}"/>
+                <DataGridTextColumn Header="TenKhoa" Width="200" Binding="{Binding TenKhoa}"/>
+                <DataGridTextColumn Header="DiaChiKhoa" Width="300" Binding="{Binding DiaChiKhoa}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Mã khoa:" HorizontalAlignment="Left" Height="46" Margin="650,54,0,0" VerticalAlignment="Top" Width="108" Foreground="Black" />
+        <Label Content="Tên khoa:" HorizontalAlignment="Center" Height="43" Margin="0,147,0,0" VerticalAlignment="Top" Width="108" Foreground="Black"/>
+        <Label Content="Địa chỉ khoa:" HorizontalAlignment="Left" Height="48" Margin="648,240,0,0" VerticalAlignment="Top" Width="136" Foreground="Black"/>
+        
+        <TextBox x:Name="MaKhoaTextBoxQLKB" HorizontalAlignment="Left" Height="30" Margin="812,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313"/>
+        
+        <TextBox x:Name="TenKhoaTextBoxQLKB" HorizontalAlignment="Left" Height="30" Margin="812,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="417"/>
+        
+        <TextBox x:Name="DiaChiKhoaTxtBoxQLKB" HorizontalAlignment="Left" Height="30" Margin="812,248,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="559"/>
+        
+        <Button x:Name="SuaBtnQLKB" Content="Chỉnh sửa" HorizontalAlignment="Left" Height="50" Margin="980,322,0,0" VerticalAlignment="Top" Width="155" Click="SuaBtnQLKB_Click"/>
+        <Button x:Name="LamTuoiBtnQLKB" Content="Làm tươi" HorizontalAlignment="Left" Height="50" Margin="1212,320,0,0" VerticalAlignment="Top" Width="155" Click="LamTuoiBtnQLKB_Click"/>
+        <Button x:Name="ThemKhoaBtnQLKB" Content="Thêm Khoa" HorizontalAlignment="Left" Height="50" Margin="748,322,0,0" VerticalAlignment="Top" Width="155" Click="ThemKhoaBtnQLKB_Click"/>
+
+
+    </Grid>
+</UserControl>

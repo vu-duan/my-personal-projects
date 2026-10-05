@@ -1,0 +1,97 @@
+﻿<Window x:Class="HospitalManager_Duan.BenhNhanWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalManager_Duan"
+        mc:Ignorable="d"
+        Title="Bệnh nhân" Height="790" Width="1400" WindowStartupLocation="CenterScreen" Background="#e6ffff" FontSize="25" FontWeight="Bold">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <!-- 
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="23*"/>
+            -->
+            <RowDefinition Height="61"/>
+            <RowDefinition Height="92*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="574*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+        <Menu Grid.Row="0" Background="#ffffff" Foreground="Black" >
+            <MenuItem Header="       Cấp cứu 1000 666 666      " FontSize="30" FontWeight="Bold" Height="70" Width="500" Foreground="red">
+
+            </MenuItem>
+
+            <MenuItem Header="            " FontSize="30" FontWeight="Bold" Height="70" Width="650" Foreground="red">
+
+            </MenuItem>
+
+            <!-- 
+            <MenuItem x:Name="Menu1_ĐangKy" Header="   Đăng ký" FontSize="30" FontWeight="Bold" Height="70" Width="180" Click="Menu1_ĐangKy_Click">
+
+            </MenuItem>
+            -->
+
+            <MenuItem x:Name="Menu1_DangNhap" Header="  Đăng xuất  " FontSize="30" FontWeight="Bold" Height="70" Width="200" Click="Menu1_DangXuat2_Click" RenderTransformOrigin="0.5,0.5" >
+                <MenuItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleX="1.909"/>
+                        <RotateTransform/>
+                        <TranslateTransform X="1.167"/>
+                    </TransformGroup>
+                </MenuItem.RenderTransform>
+
+            </MenuItem>
+
+
+        </Menu>
+
+
+        <Menu Background=" #e6f2ff" Foreground="Blue" Margin="0,0,0,22" FontWeight="Bold" Grid.Row="1">
+            <MenuItem Header="   " FontSize="25" Height="70" Width="300">
+            </MenuItem>
+
+            <MenuItem Header="   Trang chủ" FontSize="25" Height="67" Width="170" Click="Menu2_TrangChu2_Click">
+            </MenuItem>
+
+            <MenuItem Header="   Giới thiệu" FontSize="25" Height="66" Width="170" Click="Menu2_GioiThieu2_Click">
+            </MenuItem>
+
+            <!-- Click="Menu2_DichVu2_Click"-->
+            <MenuItem Header="   Dịch Vụ" FontSize="25" Height="65" Width="160" >
+                <MenuItem Header="Điền Thông tin cá nhân" Click="DienThongTinCaNhan2_Click"/>
+                <MenuItem Header="Đặt lịch khám" Click="DatLichKham2_Click"/>
+                <MenuItem Header="Lịch sử khám bệnh" Click="LichSuKhamBenh2_Click"/>
+            </MenuItem>
+
+
+            <!-- Click="Menu2_ChuyenKhoa2_Click -->
+            <MenuItem Header=" Chuyên khoa" FontSize="25" Height="63" Width="180">
+                <MenuItem Header="Khoa mắt" Click="KhoaMatBenhNhan_Click"/>
+                <MenuItem Header="Khoa hô hấp" Click="KhoaHoHapBenhNhan_Click"/>
+                <MenuItem Header="Khoa tim mạch" Click="KhoaTimMachBenhNhan_Click"/>
+                <MenuItem Header="Khoa cấp cứu" Click="KhoaCapCuuBenhNhan_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="   Tin tức" FontSize="25" Height="67" Width="150" Click="Menu2_TinTuc2_Click">
+            </MenuItem>
+
+            <MenuItem Header="   Liên hệ" FontSize="25" Height="65" Width="160" Click="Menu2_LienHe2_Click">
+            </MenuItem>
+
+        </Menu>
+        <Label Content="     Trang chủ" HorizontalAlignment="Center" Height="44" Grid.Row="1" VerticalAlignment="Top" Width="1400" Background="#f0f5f5" x:Name="lblTrangChuBenhNhan" Margin="0,68,0,0" Grid.RowSpan="2" />
+
+
+        <!-- VÙNG HIỂN THỊ -->
+        <ContentControl x:Name="MainContent"
+              Grid.Row="3" Margin="0,2,0,0"/>
+
+
+    </Grid>
+</Window>

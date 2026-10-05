@@ -1,0 +1,50 @@
+﻿<Window x:Class="HospitalManager_Duan.BacSy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalManager_Duan"
+        mc:Ignorable="d"
+        Title="Bác sĩ" Height="790" Width="1400" WindowStartupLocation="CenterScreen" Background="#e6ffff" FontSize="25" FontWeight="Bold" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="331*"/>
+
+
+        </Grid.RowDefinitions>
+
+        <!-- Menu -->
+        <Menu Grid.Row="0" Background="#e6f2ff" Foreground="Blue" >
+             <!-- 
+            <MenuItem Header="  " FontSize="30" FontWeight="Bold" Height="70" Width="150" Foreground="blue">
+            </MenuItem>
+            -->
+
+            <MenuItem x:Name="Menu1_QuanLyBenhNhan" Header=" Quản lý bệnh nhân" FontSize="30" FontWeight="Bold" Height="70" Width="300" Foreground="blue" Click="Menu1_QuanLyBenhNhan_Click">
+            </MenuItem>
+
+            <MenuItem x:Name="Menu1_NhapKetQua" Header="   Nhập kết quả" FontSize="30" FontWeight="Bold" Height="68" Width="260" Click="Menu1_NhapKetQua_Click">
+            </MenuItem>
+
+            <MenuItem x:Name="Menu1_LichLamViec" Header="    Lịch làm việc" FontSize="30" FontWeight="Bold" Height="68" Width="260" Click="Menu1_LichLamViec_Click">
+            </MenuItem>
+
+            <MenuItem x:Name="Menu1_TTCaNhan" Header=" Thông tin cá nhân" FontSize="30" FontWeight="Bold" Height="68" Width="290" Click="Menu1_ThongTinCaNhan_Click">
+            </MenuItem>
+
+            <MenuItem x:Name="Menu1_DangXuatBs" Header="  Đăng xuất  " FontSize="30" FontWeight="Bold" Height="70" Width="200" Click="Menu1_DangXuatBS_Click" Foreground="red">
+            </MenuItem>
+
+
+
+        </Menu>
+        <Label Content="   " HorizontalAlignment="Center" Height="40" Grid.Row="1" VerticalAlignment="Center" Width="1400" x:Name="lblHienThiBacSi" Background="#f0f5f5"/>
+
+        <!-- VÙNG HIỂN THỊ -->
+        <ContentControl x:Name="MainContent"
+            Grid.Row="2" Margin="0,2,0,0"/>
+
+    </Grid>
+</Window>

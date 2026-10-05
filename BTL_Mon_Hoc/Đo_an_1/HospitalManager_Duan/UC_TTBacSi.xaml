@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_TTBacSi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1400" Loaded="UserControl_Loaded">
+    <Grid Background="#e6ffff">
+        <Label Content="Mã khoa:" HorizontalAlignment="Left" Height="44" Margin="20,8,0,0" VerticalAlignment="Top" Width="104" Foreground="Black"/>
+
+        <Label Content="Mã bác sĩ:" HorizontalAlignment="Left" Height="45" Margin="16,75,0,0" VerticalAlignment="Top" Width="115" Foreground="Black"/>
+
+        <Label Content="Họ tên:" HorizontalAlignment="Left" Height="42" Margin="20,142,0,0" VerticalAlignment="Top" Width="88" Foreground="Black"/>
+
+        <Label Content="Năm sinh:" HorizontalAlignment="Left" Height="42" Margin="22,211,0,0" VerticalAlignment="Top" Width="122" Foreground="Black"/>
+
+        <Label Content="Phone:" HorizontalAlignment="Left" Height="40" Margin="22,288,0,0" VerticalAlignment="Top" Width="88" Foreground="Black"/>
+
+        <Label Content="Giới tính:" HorizontalAlignment="Left" Height="41" Margin="20,361,0,0" VerticalAlignment="Top" Width="104" Foreground="Black"/>
+
+        <Label Content="Chức vụ:" HorizontalAlignment="Left" Height="40" Margin="22,428,0,0" VerticalAlignment="Top" Width="104" Foreground="Black"/>
+
+        <ComboBox HorizontalAlignment="Left" Height="36" Margin="148,13,0,0" VerticalAlignment="Top" Width="422" FontWeight="Normal" x:Name="MaKhoaComboBoxTTBs">
+            <ComboBoxItem Content="MAT"/>
+            <ComboBoxItem Content="HOHAP"/>
+            <ComboBoxItem Content="TIMMACH"/>
+            <ComboBoxItem Content="CAPCUU"/>
+        </ComboBox>
+
+        <TextBox x:Name="HoTenTBoxTTBs" HorizontalAlignment="Left" Height="32" Margin="144,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="486" FontWeight="Normal"/>
+
+        <TextBox x:Name="CccdTBoxTTBs" HorizontalAlignment="Left" Height="32" Margin="144,81,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="486" FontWeight="Normal"/>
+
+        <TextBox x:Name="NamSinhTBoxTTBs" HorizontalAlignment="Left" Height="32" Margin="144,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="486" FontWeight="Normal" />
+
+        <ComboBox HorizontalAlignment="Left" Height="36" Margin="150,360,0,0" VerticalAlignment="Top" Width="420" FontWeight="Normal" x:Name="GioiTinhComboBoxTTBs">
+            <ComboBoxItem Content="Nam"/>
+            <ComboBoxItem Content="Nữ"/>
+        </ComboBox>
+
+        <ComboBox HorizontalAlignment="Left" Height="36" Margin="150,434,0,0" VerticalAlignment="Top" Width="416" FontWeight="Normal" x:Name="ChucVuComboBoxTTBs">
+            <ComboBoxItem Content="Bác sĩ chuyên khoa 1"/>
+            <ComboBoxItem Content="Bác sĩ chuyên khoa 2"/>
+            <ComboBoxItem Content="Bác sĩ nội trú"/>
+            <ComboBoxItem Content="Y tá"/>
+        </ComboBox>
+        <TextBox x:Name="SdtTBoxTTBs" HorizontalAlignment="Left" Height="32" Margin="146,292,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="484" FontWeight="Normal"/>
+
+        <Button x:Name="LuuBtnTTBs" Content="Lưu" HorizontalAlignment="Left" Height="46" Margin="150,498,0,0" VerticalAlignment="Top" Width="118" Click="LuuBtnTTBs_Click"/>
+        <Button x:Name="LamTuoiBtnTTBs" Content="Làm tươi" HorizontalAlignment="Left" Height="46" Margin="502,498,0,0" VerticalAlignment="Top" Width="128" Click="LamTuoiBtnTTBs_Click"/>
+        <Label Content="Tra Cứu Thông Tin Cá Nhân" HorizontalAlignment="Left" Height="68" Margin="827,-1,0,0" VerticalAlignment="Top" Width="486" FontSize="35"/>
+        <Label Content="Cccd:" HorizontalAlignment="Left" Height="32" Margin="734,69,0,0" VerticalAlignment="Top" Width="85"/>
+        <TextBox x:Name="MaBacSiTBoxTTBs" HorizontalAlignment="Left" Height="32" Margin="827,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="522"/>
+        <Button x:Name="TraCuuBtnTTBs" Content="Tra cứu" HorizontalAlignment="Left" Height="52" Margin="953,150,0,0" VerticalAlignment="Top" Width="213" Click="TraCuuBtnTTBs_Click"/>
+        <DataGrid x:Name="ThongTinBacSiDataGird" HorizontalAlignment="Left" Height="145" Margin="734,245,0,0" VerticalAlignment="Top" Width="615" AutoGenerateColumns="False" SelectionChanged="ThongTinBacSiDataGird_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã khoa" Width="180" Binding="{Binding MaKhoa}"/>
+                <DataGridTextColumn Header="Mã bác sĩ" Width="180" Binding="{Binding MaBacSi}"/>
+                <DataGridTextColumn Header="Họ tên" Width="180" Binding="{Binding TenBacSi}"/>
+                <DataGridTextColumn Header="Năm sinh" Width="180" Binding="{Binding NamSinh}"/>
+                <DataGridTextColumn Header="Phone" Width="180" Binding="{Binding Phone}"/>
+                <DataGridTextColumn Header="Giới tính" Width="180" Binding="{Binding GioiTinh}"/>
+                <DataGridTextColumn Header="Chức vụ" Width="180" Binding="{Binding ChucVu}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="ChinhSuaBtnTTBs" Content="Chỉnh sửa" HorizontalAlignment="Left" Height="46" Margin="325,498,0,0" VerticalAlignment="Top" Width="118" Click="ChinhSuaBtnTTBs_Click"/>
+
+    </Grid>
+</UserControl>

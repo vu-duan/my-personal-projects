@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_KhoaHoHap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1400">
+    <Grid Background="#e6ffff">
+        <Label Content="Khoa hô hấp có địa chỉ khoa tại tầng 2 tòa nhà B" HorizontalAlignment="Left" Height="60" Margin="357,11,0,0" VerticalAlignment="Top" Width="827" Foreground="Black" FontSize="30"/>
+
+        <Image Source="Images/BsNhat.png" Margin="47,109,1084,153"/>
+        <Label Content="Bác sĩ: Trần Văn Nhất" HorizontalAlignment="Left" Height="36" Margin="357,160,0,0" VerticalAlignment="Top" Width="245" Foreground="Black" FontWeight="Normal"/>
+        <Label Content="Chức vụ: Bác sĩ chuyên khoa 2" HorizontalAlignment="Left" Height="34" Margin="357,258,0,0" VerticalAlignment="Top" Width="298" Foreground="Black" FontWeight="Normal"/>
+        <Label Content="Email: trannhat1970@gmail.com" HorizontalAlignment="Left" Height="52" Margin="357,368,0,0" VerticalAlignment="Top" Width="310" Foreground="Black" FontWeight="Normal"/>
+
+        <Image Source="Images/BsDu.jpg" Margin="743,47,357,62"  Width="300"/>
+        <Label Content="Bác sĩ: Lê Văn Du" HorizontalAlignment="Left" Height="36" Margin="1063,178,0,0" VerticalAlignment="Top" Width="218"  Foreground="Black" FontWeight="Normal"/>
+        <Label Content="Chức vụ: Bác sĩ chuyên khoa 1" HorizontalAlignment="Left" Height="42" Margin="1060,264,0,0" VerticalAlignment="Top" Width="300"  Foreground="Black" FontWeight="Normal"/>
+        <Label Content="Email: dule1@gmail.com" HorizontalAlignment="Left" Height="44" Margin="1063,374,0,0" VerticalAlignment="Top" Width="300"  Foreground="Black" FontWeight="Normal"/>
+
+
+
+
+        <!-- 
+        <StackPanel Margin="20">
+             
+            <TextBlock Text="Khoa hô hấp"
+            FontSize="35"
+            FontWeight="Bold"
+            Foreground="Black"/>
+        </StackPanel>
+        -->
+
+
+    </Grid>
+</UserControl>

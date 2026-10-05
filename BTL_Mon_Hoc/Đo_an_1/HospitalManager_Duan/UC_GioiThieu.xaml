@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_GioiThieu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#e6ffff">
+        <StackPanel Margin="20">
+
+            <TextBlock Text="Câu chuyện về bệnh viện H"
+               FontSize="30"
+               FontWeight="Bold"
+               Foreground="Black"/>
+
+            <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" FontSize="20" FontWeight="Normal">
+               Năm 2021 Bệnh viện H được thành lập. Với 4 chuyên khoa cùng với nhiều y, bác sĩ giỏi về chuyên môn giàu y đức và sự tận tâm cao trong công việc. Bệnh viện H hướng tới là bệnh viện hàng đầu về dịch vụ y tế - dịch vụ tận tâm - văn hóa tử tế và xứng đáng là nơi bệnh nhân gửi trọn niềm tin!
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,50,0,0" FontSize="20" FontWeight="Normal">
+            </TextBlock>
+
+            <!-- -->
+            <TextBlock Text="Bệnh viện H tự hào bởi:"  FontSize="30" FontWeight="Bold" Foreground="Black"/>
+            <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" FontSize="20" FontWeight="Normal">
+                - Tiên phong trong mô hình bệnh viện xanh - sạch - đẹp trong khu vực.
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" FontSize="20" FontWeight="Normal">
+                - Sở hữu nhiều chuyên gia, y, bác sĩ có trình độ chuyên môn cao, giàu kinh nghiệm được đào tạo chuyên sâu ở trong và ngoài nước.
+            </TextBlock>
+            <TextBlock TextWrapping="Wrap" Margin="0,20,0,0" FontSize="20" FontWeight="Normal">
+                - Bệnh viện được đầu tư cơ sở vật chất hiện đại và tiện nghi đáp ứng tốt nhu cầu khám chữa bệnh.
+            </TextBlock>
+
+        </StackPanel>
+
+    </Grid>
+</UserControl>

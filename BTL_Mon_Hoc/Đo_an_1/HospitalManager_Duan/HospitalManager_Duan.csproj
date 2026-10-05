@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\AnhTrangChu.gif" />
+    <None Remove="Images\BacSiAnh.jpg" />
+    <None Remove="Images\BsBinh.jpg" />
+    <None Remove="Images\BsDu.jpg" />
+    <None Remove="Images\BsNhat.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalManager.BLL\HospitalManager.BLL.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\AnhTrangChu.gif" />
+    <Resource Include="Images\BacSiAnh.jpg" />
+    <Resource Include="Images\BsBinh.jpg" />
+    <Resource Include="Images\BsDu.jpg" />
+    <Resource Include="Images\BsNhat.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

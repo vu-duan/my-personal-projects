@@ -1,0 +1,14 @@
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\bin\Debug\net8.0\HospitalManager.DAL.deps.json
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\bin\Debug\net8.0\HospitalManager.DAL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\bin\Debug\net8.0\HospitalManager.DAL.pdb
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.AssemblyInfoInputs.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.AssemblyInfo.cs
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.csproj.CoreCompileInputs.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\refint\HospitalManager.DAL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.pdb
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\ref\HospitalManager.DAL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\bin\Debug\net8.0\HospitalManager.DAL.runtimeconfig.json
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.csproj.AssemblyReference.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.DAL\obj\Debug\net8.0\HospitalManager.DAL.genruntimeconfig.cache

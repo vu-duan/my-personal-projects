@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_NhapKetQua"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="1400" Loaded="UserControl_Loaded">
+    <Grid Background="#e6ffff">
+        <Label Content="Mã Bệnh nhân:" HorizontalAlignment="Left" Height="39" Margin="3,35,0,0" VerticalAlignment="Top" Width="165"/>
+        <DataGrid x:Name="KetQuaBenhNhanDataGirdN" HorizontalAlignment="Left" Height="158" Margin="6,164,0,0" VerticalAlignment="Top" Width="541" AutoGenerateColumns="False" SelectionChanged="KetQuaBenhNhanDataGirdN_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã phiếu" Width="180" Binding="{Binding MaPhieu}"/>
+                <DataGridTextColumn Header="Mã bệnh nhân" Width="180" Binding="{Binding MaBenhNhan}"/>
+                <DataGridTextColumn Header="Ngày khám" Width="180" Binding="{Binding NgayKham}"/>
+                <DataGridTextColumn Header="Buổi khám" Width="180" Binding="{Binding Buoi}"/>
+                <DataGridTextColumn Header="Triệu chứng" Width="180" Binding="{Binding TrieuChung}"/>
+                <DataGridTextColumn Header="Tên khoa" Width="180" Binding="{Binding TenKhoa}"/>
+                <DataGridTextColumn Header="Bác sĩ" Width="180" Binding="{Binding BacSi}"/>
+                <DataGridTextColumn Header="Kết quả" Width="180" Binding="{Binding KetQua}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="TKmaBenhNhanTxtN" HorizontalAlignment="Left" Height="32" Margin="168,39,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="379"/>
+        <Button x:Name="TimKiemBtnN" Content="Tìm kiếm" HorizontalAlignment="Left" Height="35" Margin="226,101,0,0" VerticalAlignment="Top" Width="198" Click="TimKiemBtnN_Click"/>
+        <Label Content="Nhập Kết Qủa Bệnh Nhân" HorizontalAlignment="Left" Height="58" Margin="825,-7,0,0" VerticalAlignment="Top" Width="481" FontSize="35"/>
+
+        <Label Content="Mã phiếu:" HorizontalAlignment="Left" Height="40" Margin="621,43,0,0" VerticalAlignment="Top" Width="123" Foreground="Black"/>
+        <Label Content="Mã bệnh nhân:" HorizontalAlignment="Left" Height="41" Margin="617,94,0,0" VerticalAlignment="Top" Width="160" Foreground="Black"/>
+        <Label Content="Ngày khám:" HorizontalAlignment="Left" Height="44" Margin="621,153,0,0" VerticalAlignment="Top" Width="125" Foreground="Black"/>
+        <Label Content="Buổi khám:" HorizontalAlignment="Left" Height="40" Margin="623,212,0,0" VerticalAlignment="Top" Width="125" Foreground="Black"/>
+        <Label Content="Triệu chứng:" HorizontalAlignment="Left" Height="40" Margin="616,266,0,0" VerticalAlignment="Top" Width="144" Foreground="Black"/>
+        <Label Content="Tên khoa:" HorizontalAlignment="Left" Height="39" Margin="621,322,0,0" VerticalAlignment="Top" Width="109" Foreground="Black"/>
+        <Label Content="Bác sĩ:" HorizontalAlignment="Left" Height="37" Margin="627,376,0,0" VerticalAlignment="Top" Width="72" Foreground="Black"/>
+        <Label Content="Kết quả:" HorizontalAlignment="Left" Height="39" Margin="623,436,0,0" VerticalAlignment="Top" Width="107" Foreground="Black"/>
+
+        <TextBox x:Name="MaPhieuTxtN" HorizontalAlignment="Left" Height="32" Margin="777,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="561"/>
+        <TextBox x:Name="MaBenhNhanTxtN" HorizontalAlignment="Left" Height="31" Margin="778,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="556"/>
+        <TextBox x:Name="NgayKhamTxtN" HorizontalAlignment="Left" Height="31" Margin="778,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="556"/>
+        <TextBox x:Name="BuoiKhamTxtN" HorizontalAlignment="Left" Height="31" Margin="778,218,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560"/>
+        <TextBox x:Name="TrieuChungTxtN" HorizontalAlignment="Left" Height="32" Margin="778,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560"/>
+        <TextBox x:Name="TenKhoaTxtN" HorizontalAlignment="Left" Height="31" Margin="778,330,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="556"/>
+        <TextBox x:Name="BacSiTxtN" HorizontalAlignment="Left" Height="31" Margin="778,386,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560"/>
+        <TextBox x:Name="KetQuaTxtN" HorizontalAlignment="Left" Height="35" Margin="778,440,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="560"/>
+        <Button x:Name="NhapKetQuaBtnN" Content="Nhập kết quả" HorizontalAlignment="Left" Height="40" Margin="802,512,0,0" VerticalAlignment="Top" Width="175" Click="NhapKetQuaBtnN_Click"/>
+        <Button x:Name="LamTuoiBtnN" Content="Làm tươi" HorizontalAlignment="Left" Height="40" Margin="1131,514,0,0" VerticalAlignment="Top" Width="175" Click="LamTuoiBtnN_Click"/>
+
+
+    </Grid>
+</UserControl>

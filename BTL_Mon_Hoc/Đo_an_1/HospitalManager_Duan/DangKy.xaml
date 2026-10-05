@@ -1,0 +1,31 @@
+﻿<Window x:Class="HospitalManager_Duan.DangKy"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalManager_Duan"
+        mc:Ignorable="d"
+        Title="Đăng ký" Height="600" Width="550" Background="#e6ffff" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <Label Content="Cccd:" HorizontalAlignment="Left" Height="36" Margin="16,82,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label Content="Họ tên:" HorizontalAlignment="Left" Height="34" Margin="10,147,0,0" VerticalAlignment="Top" Width="87"/>
+        <Label Content="Email:" HorizontalAlignment="Left" Height="32" Margin="12,223,0,0" VerticalAlignment="Top" Width="77"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Height="31" Margin="12,285,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label Content="Password 2:" HorizontalAlignment="Left" Height="36" Margin="8,347,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBox x:Name="CccdTextBoxDKy" HorizontalAlignment="Left" Height="30" Margin="136,84,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="HoTenTextBoxDKy" HorizontalAlignment="Left" Height="30" Margin="137,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="EmailTextBoxDKy" HorizontalAlignment="Left" Height="30" Margin="139,217,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="PasswordTextBoxDKy" HorizontalAlignment="Left" Height="30" Margin="141,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <TextBox x:Name="Password2TextBoxDKy" HorizontalAlignment="Left" Height="30" Margin="143,349,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="380"/>
+        <Button Content="Đăng ký" HorizontalAlignment="Left" Height="46" Margin="193,434,0,0" VerticalAlignment="Top" Width="214" BorderBrush="Black" Click="Button_Click"/>
+        <Label Content="Mời bạn đăng ký để có thể sử dụng đầy đủ các tính năng " HorizontalAlignment="Left" Height="39" Margin="33,28,0,0" VerticalAlignment="Top" Width="393" FontSize="12" FontWeight="Medium" Foreground="Black"/>
+        <!--Quên mật khẩu-->
+        <TextBlock Margin="164,520,-85,-156">
+     <Hyperlink Click="Hyperlink_Click1">
+        Đăng nhập
+     </Hyperlink>
+        </TextBlock>
+        <Label Content="Bạn đã có tài khoản.?" HorizontalAlignment="Left" Height="42" Margin="16,514,0,0" VerticalAlignment="Top" Width="142" FontWeight="Medium" FontSize="13" Foreground="Black"/>
+
+    </Grid>
+</Window>

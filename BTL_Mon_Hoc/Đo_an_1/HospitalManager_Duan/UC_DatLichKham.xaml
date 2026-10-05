@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="HospitalManager_Duan.UC_DatLichKham"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:HospitalManager_Duan"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1400">
+    <Grid Background="#e6ffff">
+        <Label Content="Mã bệnh nhân:" HorizontalAlignment="Left" Height="49" Margin="55,24,0,0" VerticalAlignment="Top" Width="174" Foreground="Black"/>
+        <Label Content="Buổi:" HorizontalAlignment="Left" Height="45" Margin="58,94,0,0" VerticalAlignment="Top" Width="123" Foreground="Black"/>
+        <Label Content="Ngày khám:" HorizontalAlignment="Left" Height="42" Margin="52,172,0,0" VerticalAlignment="Top" Width="123" Foreground="Black"/>
+        <Label Content="Khoa bệnh:" HorizontalAlignment="Left" Height="65" Margin="52,250,0,0" VerticalAlignment="Top" Width="123" Foreground="Black"/>
+        <Label Content="Triệu chứng:" HorizontalAlignment="Left" Height="47" Margin="46,318,0,0" VerticalAlignment="Top" Width="148" Foreground="Black"/>
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="240,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="914" x:Name="TextBoxMaBenhNhanDLK" FontWeight="Normal"/>
+        
+        <!-- 
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="240,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="552" x:Name="TextBoxBuoiDatLichKham"/>
+        -->
+        
+        <ComboBox HorizontalAlignment="Left"
+            Height="40"
+            Margin="240,93,0,0"
+            VerticalAlignment="Top"
+            Width="555"
+            FontWeight="Normal"
+            x:Name="ComboBoxBuoiDLK">
+
+            <ComboBoxItem Content="Sáng"/>
+            <ComboBoxItem Content="Chiều"/>
+        </ComboBox>
+
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="243,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="552" x:Name="TextBoxNgayKhamDLK" FontWeight="Normal"/>
+
+        <Label Content="(dd/mm/yyyy)" HorizontalAlignment="Left" Height="42" Margin="821,163,0,0" VerticalAlignment="Top" Width="396" Foreground="red"  />
+
+        <TextBox HorizontalAlignment="Left" Height="40" Margin="246,311,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="1090" x:Name="TextBoxTrieuChungDLK" FontWeight="Normal"/>
+        
+        <Button Content="Làm tươi" HorizontalAlignment="Left" Height="60" Margin="325,406,0,0" VerticalAlignment="Top" Width="300" x:Name="ButtonLamTuoiDLK" Click="ButtonLamTuoiDLK_Click"/>
+        
+        <Button Content="Đặt lịch khám" HorizontalAlignment="Left" Height="60" Margin="871,406,0,0" VerticalAlignment="Top" Width="300" x:Name="ButtonDatLichKhamDLK" Click="ButtonDatLichKhamDLK_Click"/>
+        
+        
+        <ComboBox HorizontalAlignment="Left"
+          Height="40"
+          Margin="245,238,0,0"
+          VerticalAlignment="Top"
+          Width="555"
+          FontWeight="Normal"
+          x:Name="ComboBoxKhoaBenhDLK">
+
+            <ComboBoxItem Content="Khoa mắt"/>
+            <ComboBoxItem Content="Khoa hô hấp"/>
+            <ComboBoxItem Content="Khoa tim mạch"/>
+            <ComboBoxItem Content="Khoa cấp cứu"/>
+        </ComboBox>
+        
+
+    </Grid>
+</UserControl>

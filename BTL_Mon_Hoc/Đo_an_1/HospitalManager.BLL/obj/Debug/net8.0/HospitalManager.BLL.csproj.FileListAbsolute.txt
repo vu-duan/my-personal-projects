@@ -1,0 +1,15 @@
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\bin\Debug\net8.0\HospitalManager.BLL.deps.json
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\bin\Debug\net8.0\HospitalManager.BLL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\bin\Debug\net8.0\HospitalManager.BLL.pdb
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\bin\Debug\net8.0\HospitalManager.DAL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\bin\Debug\net8.0\HospitalManager.DAL.pdb
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.csproj.AssemblyReference.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.GeneratedMSBuildEditorConfig.editorconfig
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.AssemblyInfoInputs.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.AssemblyInfo.cs
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.csproj.CoreCompileInputs.cache
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\Hospital.A565A628.Up2Date
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\refint\HospitalManager.BLL.dll
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\HospitalManager.BLL.pdb
+D:\DA1\V0\DATK1_Duan_V0\HospitalManager.BLL\obj\Debug\net8.0\ref\HospitalManager.BLL.dll
